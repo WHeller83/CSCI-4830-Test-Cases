@@ -1,4 +1,4 @@
-package edu.uno.tests;
+package spade.test;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class TestUNOApp {
+public class TestRef {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -26,7 +26,7 @@ public class TestUNOApp {
   }
 
   @Test
-  public void testUNOSearch() throws Exception {
+  public void test() throws Exception {
     driver.get("https://www.unomaha.edu/registrar/students/before-you-enroll/class-search/index.php");
     driver.manage().window().maximize();
     driver.findElement(By.xpath("//button[@class='btn btn-large btn-cta']")).click();
