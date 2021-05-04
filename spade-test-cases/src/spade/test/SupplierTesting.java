@@ -110,7 +110,12 @@ public class SupplierTesting {
     Assert.assertEquals(expected, result);
   }
   
-  
+  /**
+   * This test checks that deleted item listings are removed from user carts.
+   * An item is posted, a user adds the item to their cart, and the the supplier deletes the listing.
+   * If correct, the deleted item should be removed from the user's cart.
+   * @throws Exception
+   */
   @Test
   public void test5() throws Exception {
 	  driver.get("http://csci4830-wheller.ddns.net:8080/spade/home.jsp");
